@@ -1,4 +1,13 @@
+/*
+ * 
+ * 
+ */
+
+/* CONSTANTS */
+int BAUD = 9600;      //The rate at which the Arduino will communicate with the host computer
 int analogInput = A1;
+
+/* INITALIZATIONS */
 float vout = 0.0;
 float vin = 0.0;
 float R1 = 30000.0;
@@ -6,11 +15,16 @@ float R2 = 7500.0;
 int value = 0;
 int pwmOut = 3;
 
+
 void setup() {
+  //Set up the inputs and outputs for the system
   pinMode(analogInput, INPUT);
-  Serial.begin(9600);
-  Serial.print("DC VOLTMETER");
   pinMode(pwmOut, OUTPUT);
+
+  //Start the serial terminal
+  Serial.begin(BAUD);
+
+  Serial.print("DC VOLTMETER");  
 }
 
 void loop() {

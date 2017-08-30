@@ -1,0 +1,23 @@
+Here are some things to look at and consider fixing
+
+1. Your formatting was off. I think this was because of the way that you submitted the code. I fixed it, but you should fixure our how to use GitHub (and version control in general) correctly.
+2. You have zero comments in the program. Always comment. I've set up a couple of examples for you to follow
+        HEADER
+        a. In the Arduino world, it is very common to create ASCII art or a table in the header (lines 1 - 4 currently)
+        b. Also add your name to the header as an author
+        c. Also add the the header the indtended hardware (in this case I gather it is an Arduino Uno)
+        d. Add a revision date to the header
+        e. Add a purpose. "This sketch acts as a DC Voltmeter, reading a voltage on pin A1 on the Arduino Uno"
+        BODY
+        f. It is common to break the variables into groups and label them.
+        g. Each variable should have a comment to let a reader know what they are for. 'Value' isn't enough for me to read this and understand.
+        h. Comment on general blocks of code (see lines 20-22 as an example)
+ 3. Please review lines 32 and 33. I don't know if this is correct as to your intent.
+ 4. Please go to File > Preferences > Settings and enable the 'Show verbose output during compilation'. When you compile, copy and paste the output of the terminal into a text document and add it to the folder in this repo called "Errors". OR describe to me the error or problem you are having.
+ 
+ 5. In general, you don't use the '==' operator with floats. Use a '>' or '<' instead of '==' and set your logic up that way. You can read about why here: http://www.java67.com/2015/09/float-and-double-value-comparison-in-java-use-relational.html
+ 
+ I know this is small, and the setup time to comment is a lot, but trust me. You want to get in good habits now about how you code. In a week or a month, you could come back to this and not know what is going on. Comments, clean code, and good coding practices will save you in the long run. Build the habit now.
+ 
+ Lastly, this complies for me, so I need more information before I can help more.
+ 
